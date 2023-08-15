@@ -1,0 +1,46 @@
+// Variables in SCSS
+$textColor: #feca57;
+$footerColor: green;
+$hoverColor: wheat;
+$classColor: grey;
+
+@mixin commonCode {
+    color: $classColor;
+    text-transform: uppercase;
+    background-color: rebeccapurple;
+    font-size: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    width: 100% - 20%; // operators in SCSS
+    margin: 0 auto;
+    height: 100vh;
+    background-color: #222f3e;
+    color: $footerColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // Nesting in SCSS
+    h1 {
+        color: $textColor;
+
+        // & means selecting the same element 
+        &:hover {
+            color: $hoverColor;
+        }
+    }
+
+    // Since both class selectors para1 and para3 have same code hence we define mixin
+    .para1,
+    .para3 {
+        @include commonCode()
+    }
+}

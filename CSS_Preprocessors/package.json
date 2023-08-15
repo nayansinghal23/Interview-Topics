@@ -1,0 +1,15 @@
+{
+  "name": "css_preprocessors",
+  "version": "1.0.0",
+  "description": "Starting with SASS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss css/style.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nayan Singhal",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
