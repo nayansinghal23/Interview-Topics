@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Specificity</title>
+    <style>
+      h1.header {
+        color: red;
+      }
+
+      .header-2 {
+        color: black;
+      }
+
+      .text {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="header-id" class="header header-2">Header</h1>
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi minima
+      cupiditate corporis magnam optio harum esse nobis consequuntur dignissimos
+      aperiam iste quae veniam possimus molestiae at suscipit, adipisci ipsum
+      sit! Animi blanditiis, error ratione alias ex quaerat odio quos sunt
+      eligendi dolorum, quae, sapiente id?
+    </p>
+  </body>
+</html>
