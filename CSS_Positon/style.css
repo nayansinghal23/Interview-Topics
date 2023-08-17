@@ -1,0 +1,36 @@
+* {
+  font-size: 30px;
+}
+
+.parent {
+  background-color: aqua;
+  padding: 10px;
+  position: relative;
+}
+
+.child {
+  padding: 10px;
+}
+
+.child-one {
+  background-color: green;
+
+  /* Position absolute element are always positioned on relative to their direct parent's position */
+  /* position: absolute;
+  left: 0;
+  top: 0; */
+
+  /* Position fixed element are always positioned on relative to the entire html element and moves with the page as it scrolls */
+  /* position: fixed;
+  top: 0; */
+
+  /* Position stiky is a combination of both relative as well as fixed */
+}
+
+.child-two {
+  background-color: orangered;
+}
+
+.child-three {
+  background-color: palevioletred;
+}
