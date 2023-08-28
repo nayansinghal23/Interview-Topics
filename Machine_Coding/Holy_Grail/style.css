@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+}
+
+.parent {
+  height: 100vh;
+}
+
+.top,
+.bottom {
+  height: 5%;
+}
+
+.top {
+  background-color: red;
+}
+
+.center {
+  height: 90%;
+  display: flex;
+}
+
+#c1 {
+  background-color: green;
+  width: 10%;
+}
+#c2 {
+  background-color: brown;
+  width: 80%;
+}
+#c3 {
+  background-color: greenyellow;
+  width: 10%;
+}
+
+.bottom {
+  background-color: blue;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .top,
+  .bottom {
+    height: 20%;
+  }
+
+  .center {
+    flex-direction: column;
+    height: 60%;
+  }
+
+  #c1,
+  #c2,
+  #c3 {
+    height: 50%;
+    width: 100%;
+  }
+}
