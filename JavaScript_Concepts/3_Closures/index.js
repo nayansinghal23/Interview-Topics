@@ -27,6 +27,7 @@
 // };
 // sum(23, 67);
 
+/*
 function z() {
   function x() {
     var a = 7;
@@ -46,3 +47,17 @@ let sum = (num1, num2) => {
   z()()();
 };
 sum(23, 67);
+*/
+
+// Module Pattern
+var Module = (function () {
+  function privateMethod() {
+    // do something
+  }
+
+  return {
+    publicMethod: function () {
+      // can call private method
+    },
+  };
+})();
