@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Propogation</title>
+    <style>
+      body * {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid red;
+      }
+      .products {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-gap: 10px;
+      }
+      span {
+        width: 100px;
+        height: 100px;
+        border-color: bisque;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      DIV
+      <form action="">
+        FORM
+        <button>BUTTON</button>
+      </form>
+    </div>
+    <div class="products">
+      <span class="mobile"><b>Mobile</b></span>
+      <span class="Headphone">Headphone</span>
+      <span class="laptop">laptop</span>
+      <span class="speaker">speaker</span>
+      <span class="USB Dock">USB Dock</span>
+      <span class="Tripod">Tripod</span>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
